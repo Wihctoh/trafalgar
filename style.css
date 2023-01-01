@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Mulibold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Mulilight.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Muliregular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Mulisemibold.ttf) format("truetype");
+  font-weight: 600;
+}
+* {
+  background-color: #e5e5e5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Muli";
+  font-style: normal;
+  width: 1302px;
+  margin: 56px auto 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-logo {
+  background-image: url(./assets/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 160px;
+  height: 41px;
+  margin-left: 56px;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav p {
+  font: 400 18px "Muli";
+  color: #1f1534;
+  opacity: 0.5;
+  padding-right: 40px;
+}
+header nav p:last-child {
+  padding-right: 29px;
+}
+header nav p:hover {
+  font: 700 18px "Muli";
+  opacity: 1;
+}
+
+.healthcare {
+  margin-top: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.healthcare .healthcare__text {
+  width: 445px;
+}
+.healthcare .healthcare__text h1 {
+  color: #000;
+  font: 700 48px "Mulish";
+}
+.healthcare .healthcare__text p {
+  font: 300 21px "Mulish";
+  color: #7d7987;
+}
+.healthcare .btn {
+  text-align: center;
+  color: white;
+  font: 700 18px "Mulish";
+  background-color: #458ff6;
+  padding: 20px;
+  width: 200px;
+  border-radius: 55px;
+}
+.healthcare .healthcare__img {
+  background-image: url(./assets/illustration.png);
+  width: 693px;
+  height: 598px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

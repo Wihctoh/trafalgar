@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Mulibold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Mulilight.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Muliregular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Muli";
+  src: url(./fonts/muli/Mulisemibold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+$background-color: #e5e5e5;
+$hard-black-color: #1f1534;
+$black-color: #000;
+$grey-color: #7d7987;
+$white-color: #ffff;
+$blue-color: #458ff6;
+
+* {
+  background-color: $background-color;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Muli";
+  font-style: normal;
+  width: 1302px;
+  margin: 56px auto 0;
+}
+
+// --------------------Header------------------
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-logo {
+    background-image: url(./assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 41px;
+    margin-left: 56px;
+  }
+
+  nav {
+    display: flex;
+
+    p {
+      font: 400 18px "Muli";
+      color: $hard-black-color;
+      opacity: 0.5;
+      padding-right: 40px;
+
+      &:last-child {
+        padding-right: 29px;
+      }
+
+      &:hover {
+        font: 700 18px "Muli";
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// --------------------section-healthcare-----------------
+
+.healthcare {
+	margin-top: 86px;
+	display: flex;
+	justify-content: space-between;
+
+  .healthcare__text {
+	width: 445px;
+	
+    h1 {
+      color: $black-color;
+      font: 700 48px "Mulish";
+    }
+    p {
+      font: 300 21px "Mulish";
+      color: $grey-color;
+    }
+  }
+  .btn {
+	text-align: center;
+    color: $white-color;
+    font: 700 18px "Mulish";
+    background-color: $blue-color;
+    padding: 20px;
+    width: 200px;
+	border-radius: 55px;
+  }
+
+  .healthcare__img{
+	background-image: url(./assets/illustration.png);
+	width: 693px;
+	height: 598px;
+	background-repeat: no-repeat;
+	background-size: contain;
+  }
+}
