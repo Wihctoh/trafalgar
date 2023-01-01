@@ -81,24 +81,27 @@ header nav p:hover {
           justify-content: space-between;
 }
 .healthcare .healthcare__text {
-  width: 445px;
+  width: 441px;
 }
 .healthcare .healthcare__text h1 {
   color: #000;
-  font: 700 48px "Mulish";
+  font: 700 48px "Muli";
+  margin-top: 106px;
 }
 .healthcare .healthcare__text p {
-  font: 300 21px "Mulish";
+  font: 300 21px "Muli";
   color: #7d7987;
+  margin-top: 25px;
 }
 .healthcare .btn {
   text-align: center;
   color: white;
-  font: 700 18px "Mulish";
+  font: 700 18px "Muli";
   background-color: #458ff6;
   padding: 20px;
   width: 200px;
   border-radius: 55px;
+  margin-top: 48px;
 }
 .healthcare .healthcare__img {
   background-image: url(./assets/illustration.png);

@@ -85,25 +85,28 @@ header {
 	justify-content: space-between;
 
   .healthcare__text {
-	width: 445px;
+	width: 441px;
 	
     h1 {
       color: $black-color;
-      font: 700 48px "Mulish";
+      font: 700 48px "Muli";
+	  margin-top: 106px;
     }
     p {
-      font: 300 21px "Mulish";
+      font: 300 21px "Muli";
       color: $grey-color;
+	  margin-top: 25px;
     }
   }
   .btn {
 	text-align: center;
     color: $white-color;
-    font: 700 18px "Mulish";
+    font: 700 18px "Muli";
     background-color: $blue-color;
     padding: 20px;
     width: 200px;
 	border-radius: 55px;
+	margin-top: 48px;
   }
 
   .healthcare__img{
