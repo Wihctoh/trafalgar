@@ -18,6 +18,11 @@
   src: url(./fonts/muli/Mulisemibold.ttf) format("truetype");
   font-weight: 600;
 }
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img6, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img5, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img4, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img3, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img2, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 * {
   background-color: #e5e5e5;
   -webkit-box-sizing: border-box;
@@ -93,12 +98,12 @@ header nav p:hover {
   color: #7d7987;
   margin-top: 25px;
 }
-.healthcare .btn {
+.healthcare .healthcare__btn {
   text-align: center;
   color: white;
   font: 700 18px "Muli";
   background-color: #458ff6;
-  padding: 20px;
+  padding: 20px 0;
   width: 200px;
   border-radius: 55px;
   margin-top: 48px;
@@ -109,4 +114,141 @@ header nav p:hover {
   height: 598px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.Our-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Our-services .Our-services__text {
+  margin-top: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.Our-services .Our-services__text h3 {
+  font: 700 36px "Muli";
+  color: #000;
+}
+.Our-services .Our-services__text div {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 56px;
+  background-color: #000;
+  margin: 26px 0 33px;
+}
+.Our-services .Our-services__text p {
+  font: 300 18px "Muli";
+  color: #7d7987;
+  width: 952px;
+}
+.Our-services .Our-services__possibilities {
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 354px 36px 354px;
+  grid-template-rows: 354px 354px;
+  -ms-grid-columns: 350px 36px 350px 36px 350px;
+  grid-template-columns: 350px 350px 350px;
+  grid-gap: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Our-services .Our-services__possibilities > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.Our-services .Our-services__possibilities > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.Our-services .Our-services__possibilities > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.Our-services .Our-services__possibilities > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.Our-services .Our-services__possibilities > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.Our-services .Our-services__possibilities > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img1 {
+  background-image: url(./assets/Search-doctor.png);
+  width: 92px;
+  height: 90px;
+  margin: 54px 0 22px 37px;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img2 {
+  background-image: url(./assets/online-pharmacy.png);
+  width: 62px;
+  height: 85px;
+  margin: 62px 0 19.41px 37px;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img3 {
+  background-image: url(./assets/consultation.png);
+  width: 68px;
+  height: 95px;
+  margin: 47px 0 24.41px 38px;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img4 {
+  background-image: url(./assets/details-info.png);
+  width: 67px;
+  height: 95px;
+  margin: 46px 0 25.41px 39.64px;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img5 {
+  background-image: url(./assets/emergency-care.png);
+  width: 80px;
+  height: 72px;
+  margin: 59px 0 36.25px 40px;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img6 {
+  background-image: url(./assets/tracking.png);
+  width: 70px;
+  height: 95px;
+  margin: 52px 0 19.41px 38px;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item h4 {
+  font: 700 24px "Muli";
+  color: #000;
+}
+.Our-services .Our-services__possibilities .Our-services__possibilities_item p {
+  font: 300 16px "Muli";
+  color: #7d7987;
+  line-height: 28px;
+  width: 262px;
+  padding-top: 10px;
+}
+.Our-services .Our-services__btn {
+  font: 700 18px "Muli";
+  color: #458ff6;
+  width: 200px;
+  border: 1.4px solid #458ff6;
+  border-radius: 55px;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 72px;
 }

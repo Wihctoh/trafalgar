@@ -26,6 +26,11 @@ $grey-color: #7d7987;
 $white-color: #ffff;
 $blue-color: #458ff6;
 
+%img-parametrs {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 * {
   background-color: $background-color;
   box-sizing: border-box;
@@ -80,40 +85,145 @@ header {
 // --------------------section-healthcare-----------------
 
 .healthcare {
-	margin-top: 86px;
-	display: flex;
-	justify-content: space-between;
+  margin-top: 86px;
+  display: flex;
+  justify-content: space-between;
 
   .healthcare__text {
-	width: 441px;
-	
+    width: 441px;
+
     h1 {
       color: $black-color;
       font: 700 48px "Muli";
-	  margin-top: 106px;
+      margin-top: 106px;
     }
     p {
       font: 300 21px "Muli";
       color: $grey-color;
-	  margin-top: 25px;
+      margin-top: 25px;
     }
   }
-  .btn {
-	text-align: center;
+  .healthcare__btn {
+    text-align: center;
     color: $white-color;
     font: 700 18px "Muli";
     background-color: $blue-color;
-    padding: 20px;
+    padding: 20px 0;
     width: 200px;
-	border-radius: 55px;
-	margin-top: 48px;
+    border-radius: 55px;
+    margin-top: 48px;
   }
 
-  .healthcare__img{
-	background-image: url(./assets/illustration.png);
-	width: 693px;
-	height: 598px;
-	background-repeat: no-repeat;
-	background-size: contain;
+  .healthcare__img {
+    background-image: url(./assets/illustration.png);
+    width: 693px;
+    height: 598px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+// --------------------section-Our-services-----------------
+
+.Our-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .Our-services__text {
+    margin-top: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h3 {
+      font: 700 36px "Muli";
+      color: $black-color;
+    }
+    div {
+      border: 1px solid $black-color;
+      border-radius: 5px;
+      width: 56px;
+      background-color: $black-color;
+      margin: 26px 0 33px;
+    }
+    p {
+      font: 300 18px "Muli";
+      color: $grey-color;
+      width: 952px;
+    }
+  }
+  .Our-services__possibilities {
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: 354px 354px;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 36px;
+    justify-content: center;
+
+    .Our-services__possibilities_item {
+      .Our-services__possibilities_img1 {
+        background-image: url(./assets/Search-doctor.png);
+        @extend %img-parametrs;
+        width: 92px;
+        height: 90px;
+        margin: 54px 0 22px 37px;
+      }
+      .Our-services__possibilities_img2 {
+        background-image: url(./assets/online-pharmacy.png);
+        @extend %img-parametrs;
+        width: 62px;
+        height: 85px;
+        margin: 62px 0 19.41px 37px;
+      }
+      .Our-services__possibilities_img3 {
+        background-image: url(./assets/consultation.png);
+        @extend %img-parametrs;
+        width: 68px;
+        height: 95px;
+        margin: 47px 0 24.41px 38px;
+      }
+      .Our-services__possibilities_img4 {
+        background-image: url(./assets/details-info.png);
+        @extend %img-parametrs;
+        width: 67px;
+        height: 95px;
+        margin: 46px 0 25.41px 39.64px;
+      }
+      .Our-services__possibilities_img5 {
+        background-image: url(./assets/emergency-care.png);
+        @extend %img-parametrs;
+        width: 80px;
+        height: 72px;
+        margin: 59px 0 36.25px 40px;
+      }
+      .Our-services__possibilities_img6 {
+        background-image: url(./assets/tracking.png);
+        @extend %img-parametrs;
+        width: 70px;
+        height: 95px;
+        margin: 52px 0 19.41px 38px;
+      }
+      h4 {
+        font: 700 24px "Muli";
+        color: $black-color;
+      }
+      p {
+        font: 300 16px "Muli";
+        color: $grey-color;
+        line-height: 28px;
+        width: 262px;
+        padding-top: 10px;
+      }
+    }
+  }
+  .Our-services__btn {
+    font: 700 18px "Muli";
+    color: $blue-color;
+    width: 200px;
+    border: 1.4px solid $blue-color;
+    border-radius: 55px;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 72px;
   }
 }
