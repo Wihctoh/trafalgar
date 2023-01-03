@@ -18,9 +18,27 @@
   src: url(./fonts/muli/Mulisemibold.ttf) format("truetype");
   font-weight: 600;
 }
-.Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img6, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img5, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img4, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img3, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img2, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img1 {
+.description .description-app .description-app__img, .description .description-leading .description-leading__img, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img6, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img5, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img4, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img3, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img2, .Our-services .Our-services__possibilities .Our-services__possibilities_item .Our-services__possibilities_img1 {
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.description .description-app .description-app__text .decoration-line, .description .description-leading .description-leading__text .decoration-line, .Our-services .Our-services__text div {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 56px;
+  background-color: #000;
+  margin: 26px 0 33px;
+}
+
+.description .description-app .description-app__text .btn, .description .description-leading .description-leading__text .btn, .Our-services .Our-services__btn {
+  font: 700 18px "Muli";
+  color: #458ff6;
+  width: 200px;
+  border: 1.4px solid #458ff6;
+  border-radius: 55px;
+  padding: 20px 0;
+  text-align: center;
 }
 
 * {
@@ -146,13 +164,6 @@ header nav p:hover {
   font: 700 36px "Muli";
   color: #000;
 }
-.Our-services .Our-services__text div {
-  border: 1px solid #000;
-  border-radius: 5px;
-  width: 56px;
-  background-color: #000;
-  margin: 26px 0 33px;
-}
 .Our-services .Our-services__text p {
   font: 300 18px "Muli";
   color: #7d7987;
@@ -243,12 +254,67 @@ header nav p:hover {
   padding-top: 10px;
 }
 .Our-services .Our-services__btn {
-  font: 700 18px "Muli";
-  color: #458ff6;
-  width: 200px;
-  border: 1.4px solid #458ff6;
-  border-radius: 55px;
-  padding: 20px 0;
-  text-align: center;
   margin-top: 72px;
+}
+
+.description .description-leading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 220px;
+}
+.description .description-leading .description-leading__img {
+  background-image: url(./assets/description-leading__img.png);
+  width: 650px;
+  height: 477px;
+}
+.description .description-leading .description-leading__text {
+  width: 400px;
+  margin: 57px 0 0 137px;
+}
+.description .description-leading .description-leading__text h3 {
+  font: 700 36px "Muli";
+  color: #000;
+}
+.description .description-leading .description-leading__text p {
+  font: 300 18px "Muli";
+  color: #7d7987;
+}
+.description .description-leading .description-leading__text .btn {
+  margin-top: 37px;
+}
+.description .description-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 229px;
+}
+.description .description-app .description-app__text {
+  width: 364px;
+  margin: 36px 71px 0 0;
+}
+.description .description-app .description-app__text h3 {
+  font: 700 36px "Muli";
+  color: #000;
+}
+.description .description-app .description-app__text p {
+  font: 300 18px "Muli";
+  color: #7d7987;
+}
+.description .description-app .description-app__text .btn {
+  padding: 15px 0;
+  margin-top: 40px;
+}
+.description .description-app .description-app__text .btn::after {
+  content: url(./assets/Vector.svg);
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.description .description-app .description-app__img {
+  background-image: url(./assets/description-app__img.png);
+  width: 665px;
+  height: 434px;
 }

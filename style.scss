@@ -30,6 +30,22 @@ $blue-color: #458ff6;
   background-repeat: no-repeat;
   background-size: contain;
 }
+%decoration-line {
+  border: 1px solid $black-color;
+  border-radius: 5px;
+  width: 56px;
+  background-color: $black-color;
+  margin: 26px 0 33px;
+}
+%btn-learn-more {
+  font: 700 18px "Muli";
+  color: $blue-color;
+  width: 200px;
+  border: 1.4px solid $blue-color;
+  border-radius: 55px;
+  padding: 20px 0;
+  text-align: center;
+}
 
 * {
   background-color: $background-color;
@@ -140,11 +156,7 @@ header {
       color: $black-color;
     }
     div {
-      border: 1px solid $black-color;
-      border-radius: 5px;
-      width: 56px;
-      background-color: $black-color;
-      margin: 26px 0 33px;
+      @extend %decoration-line;
     }
     p {
       font: 300 18px "Muli";
@@ -217,13 +229,82 @@ header {
     }
   }
   .Our-services__btn {
-    font: 700 18px "Muli";
-    color: $blue-color;
-    width: 200px;
-    border: 1.4px solid $blue-color;
-    border-radius: 55px;
-    padding: 20px 0;
-    text-align: center;
+    @extend %btn-learn-more;
     margin-top: 72px;
+  }
+}
+
+// --------------------section-description-----------------
+
+.description {
+  .description-leading {
+    display: flex;
+    margin-top: 220px;
+
+    .description-leading__img {
+      @extend %img-parametrs;
+      background-image: url(./assets/description-leading__img.png);
+      width: 650px;
+      height: 477px;
+    }
+    .description-leading__text {
+      width: 400px;
+      margin: 57px 0 0 137px;
+
+      h3 {
+        font: 700 36px "Muli";
+        color: $black-color;
+      }
+      .decoration-line {
+        @extend %decoration-line;
+      }
+      p {
+        font: 300 18px "Muli";
+        color: $grey-color;
+      }
+      .btn {
+        @extend %btn-learn-more;
+        margin-top: 37px;
+      }
+    }
+  }
+  .description-app {
+    display: flex;
+    justify-content: end;
+    margin-top: 229px;
+
+    .description-app__text {
+      width: 364px;
+      margin: 36px 71px 0 0;
+      h3 {
+        font: 700 36px "Muli";
+        color: $black-color;
+      }
+      .decoration-line {
+        @extend %decoration-line;
+      }
+      p {
+        font: 300 18px "Muli";
+        color: $grey-color;
+      }
+      .btn {
+        @extend %btn-learn-more;
+        padding: 15px 0;
+        margin-top: 40px;
+
+        &::after{
+          content: url(./assets/Vector.svg);
+          padding-left: 15px; 
+          vertical-align: middle
+        }
+      }
+      
+    }
+    .description-app__img {
+      @extend %img-parametrs;
+      background-image: url(./assets/description-app__img.png);
+      width: 665px;
+      height: 434px;
+    }
   }
 }
